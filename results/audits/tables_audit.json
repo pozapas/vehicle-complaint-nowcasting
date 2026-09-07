@@ -1,0 +1,14 @@
+{
+  "attempt_1": {
+    "sparklines_tikz": true,
+    "compiled": true,
+    "errors": [
+      "Overfull \\hbox (37.46013pt too wide) in paragraph at lines 11--37"
+    ]
+  },
+  "final": {
+    "sparklines": true,
+    "fallback_used": false,
+    "pdf": "results/tables/tables_preview.pdf"
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "snapshot": "nhtsa_20260703",
+  "files": [
+    "COMPLAINTS_RECEIVED_1995-1999.txt",
+    "COMPLAINTS_RECEIVED_2000-2004.txt",
+    "COMPLAINTS_RECEIVED_2005-2009.txt",
+    "COMPLAINTS_RECEIVED_2010-2014.txt",
+    "COMPLAINTS_RECEIVED_2015-2019.txt",
+    "COMPLAINTS_RECEIVED_2020-2024.txt",
+    "COMPLAINTS_RECEIVED_2025-2026.txt"
+  ],
+  "rows_read": 2221663,
+  "rows_bad_fieldcount": 0,
+  "per_file": [
+    {
+      "file": "COMPLAINTS_RECEIVED_1995-1999.txt",
+      "lines": 193122,
+      "bad_fieldcount": 0,
+      "kept": 193122
+    },
+    {
+      "file": "COMPLAINTS_RECEIVED_2000-2004.txt",
+      "lines": 321349,
+      "bad_fieldcount": 0,
+      "kept": 321349
+    },
+    {
+      "file": "COMPLAINTS_RECEIVED_2005-2009.txt",
+      "lines": 236170,
+      "bad_fieldcount": 0,
+      "kept": 236170
+    },
+    {
+      "file": "COMPLAINTS_RECEIVED_2010-2014.txt",
+      "lines": 392970,
+      "bad_fieldcount": 0,
+      "kept": 392970
+    },
+    {
+      "file": "COMPLAINTS_RECEIVED_2015-2019.txt",
+      "lines": 489809,
+      "bad_fieldcount": 0,
+      "kept": 489809
+    },
+    {
+      "file": "COMPLAINTS_RECEIVED_2020-2024.txt",
+      "lines": 418884,
+      "bad_fieldcount": 0,
+      "kept": 418884
+    },
+    {
+      "file": "COMPLAINTS_RECEIVED_2025-2026.txt",
+      "lines": 169359,
+      "bad_fieldcount": 0,
+      "kept": 169359
+    }
+  ],
+  "row_level": {
+    "rows_kept": 2221663,
+    "unique_odino": 1603201,
+    "ldate_missing": 0,
+    "faildate_missing": 110144,
+    "both_dates": 2111519,
+    "both_dates_share": 0.950422723878464,
+    "negative_delay": 582,
+    "severity_counts": {
+      "Y0": 2007351,
+      "Y1": 123377,
+      "Y2": 86566,
+      "Y3": 4369
+    },
+    "crash_rows": 139010,
+    "fire_rows": 56366,
+    "ldate_min": 19950101,
+    "ldate_max": 20260701,
+    "cmpl_type_counts": {
+      "IVOQ": 1457215,
+      "EVOQ": 608869,
+      "LETR": 72128,
+      "VOQ": 58149,
+      "SVOQ": 8629,
+      "CAG": 5067,
+      "CON": 3680,
+      "RC": 2659,
+      "MVOQ": 2148,
+      "INS": 1960,
+      "MIVQ": 686,
+      "RP": 203,
+      "MAVQ": 203,
+      "OTHE": 45,
+      "DP": 20
+    }
+  },
+  "gate1": [
+    {
+      "check": "rows == 2,221,663",
+      "pass": true,
+      "value": "2,221,663"
+    },
+    {
+      "check": "unique ODINO == 1,603,201",
+      "pass": true,
+      "value": "1,603,201"
+    },
+    {
+      "check": "both-dates share ~95%",
+      "pass": true,
+      "value": "0.9504"
+    },
+    {
+      "check": "negative delays ~582",
+      "pass": true,
+      "value": "582"
+    },
+    {
+      "check": "Y1 ~117k",
+      "pass": true,
+      "value": "123,377"
+    },
+    {
+      "check": "Y2 ~84k",
+      "pass": true,
+      "value": "86,566"
+    },
+    {
+      "check": "Y3 ~4.1k",
+      "pass": true,
+      "value": "4,369"
+    }
+  ],
+  "complaint_level": {
+    "complaints": 1603201,
+    "multi_row_complaints": 423403,
+    "max_rows_per_odino": 65,
+    "both_dates": 1523727,
+    "both_dates_share": 0.9504279251322822,
+    "negative_delay": 571,
+    "severity_counts": {
+      "Y0": 1451623,
+      "Y1": 87242,
+      "Y2": 61474,
+      "Y3": 2862
+    },
+    "consumer_complaints": 1545220,
+    "consumer_share": 0.9638342291453161,
+    "channel_counts": {
+      "IVOQ": 1015859,
+      "EVOQ": 491545,
+      "LETR": 42017,
+      "VOQ": 37615,
+      "SVOQ": 6181,
+      "CON": 2522,
+      "CAG": 2308,
+      "RC": 1678,
+      "MVOQ": 1642,
+      "INS": 1051,
+      "MIVQ": 394,
+      "MAVQ": 201,
+      "RP": 146,
+      "OTHE": 25,
+      "DP": 16
+    },
+    "pre2003_cohort": 230364,
+    "in_triangle_consumer": 1420782,
+    "mature_consumer": 1280891,
+    "beyond_cap_share_mature_consumer": 0.038072716569950135,
+    "beyond_cap_share_mature_consumer_by_severity": {
+      "Y0": 0.038766397600076295,
+      "Y1": 0.028495372605271505,
+      "Y2": 0.03209103840682788,
+      "Y3": 0.12952464020933274
+    },
+    "T_cutoff": "2026-06",
+    "dropped_report_month_2026_07": 230
+  },
+  "elapsed_sec": 27.0
+}

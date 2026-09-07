@@ -1,0 +1,310 @@
+{
+  "definition": {
+    "T": "2026-06",
+    "D_months": 36,
+    "mature_rule": "incident cohort <= 2023-06 (= T - D)",
+    "cohort_floor": "1995-01 (snapshot starts 1995-01; earlier cohorts left-truncated)",
+    "channels": "consumer only (VOQ, EVOQ, IVOQ, MAVQ)",
+    "day_level_cap_days": 3650
+  },
+  "n_mature_day_level": 1267531,
+  "n_mature_month_level": 1225908,
+  "delay_quantiles_days": [
+    {
+      "group": "overall",
+      "level": "all",
+      "n": 1267531,
+      "p25": 3.0,
+      "p50": 20.0,
+      "p75": 136.0,
+      "p90": 480.0,
+      "p95": 855.0,
+      "mean": 166.48519897460938
+    },
+    {
+      "group": "severity",
+      "level": "Y0 none",
+      "n": 1142025,
+      "p25": 2.0,
+      "p50": 20.0,
+      "p75": 144.0,
+      "p90": 494.0,
+      "p95": 871.0,
+      "mean": 170.12051391601562
+    },
+    {
+      "group": "severity",
+      "level": "Y1 crash/fire",
+      "n": 71400,
+      "p25": 3.0,
+      "p50": 15.0,
+      "p75": 69.0,
+      "p90": 343.09999999999854,
+      "p95": 651.0500000000029,
+      "mean": 121.01079559326172
+    },
+    {
+      "group": "severity",
+      "level": "Y2 injury",
+      "n": 51920,
+      "p25": 4.0,
+      "p50": 19.0,
+      "p75": 88.0,
+      "p90": 380.0,
+      "p95": 738.0,
+      "mean": 139.94992065429688
+    },
+    {
+      "group": "severity",
+      "level": "Y3 fatality",
+      "n": 2186,
+      "p25": 21.0,
+      "p50": 99.0,
+      "p75": 464.75,
+      "p90": 1182.5,
+      "p95": 1800.5,
+      "mean": 382.82708740234375
+    },
+    {
+      "group": "channel",
+      "level": "EVOQ",
+      "n": 396153,
+      "p25": 4.0,
+      "p50": 31.0,
+      "p75": 171.0,
+      "p90": 504.0,
+      "p95": 867.0,
+      "mean": 178.68905639648438
+    },
+    {
+      "group": "channel",
+      "level": "IVOQ",
+      "n": 845644,
+      "p25": 2.0,
+      "p50": 15.0,
+      "p75": 114.0,
+      "p90": 471.0,
+      "p95": 860.0,
+      "mean": 160.9075927734375
+    },
+    {
+      "group": "channel",
+      "level": "MAVQ",
+      "n": 200,
+      "p25": 0.0,
+      "p50": 7.5,
+      "p75": 92.0,
+      "p90": 390.59999999999997,
+      "p95": 705.0499999999989,
+      "mean": 153.19000244140625
+    },
+    {
+      "group": "channel",
+      "level": "VOQ",
+      "n": 25534,
+      "p25": 14.0,
+      "p50": 62.0,
+      "p75": 221.0,
+      "p90": 450.0,
+      "p95": 630.3499999999985,
+      "mean": 161.97055053710938
+    },
+    {
+      "group": "era",
+      "level": "1995-2004",
+      "n": 278467,
+      "p25": 5.0,
+      "p50": 31.0,
+      "p75": 166.0,
+      "p90": 522.0,
+      "p95": 903.0,
+      "mean": 184.2781219482422
+    },
+    {
+      "group": "era",
+      "level": "2005-2014",
+      "n": 460607,
+      "p25": 3.0,
+      "p50": 23.0,
+      "p75": 182.0,
+      "p90": 655.0,
+      "p95": 1102.0,
+      "mean": 207.17819213867188
+    },
+    {
+      "group": "era",
+      "level": "2015-2023",
+      "n": 528457,
+      "p25": 2.0,
+      "p50": 13.0,
+      "p75": 93.0,
+      "p90": 367.0,
+      "p95": 660.1999999999534,
+      "mean": 121.6409912109375
+    }
+  ],
+  "empirical_F_by_severity": {
+    "Y0 none": {
+      "F(1)": 0.6352927425507354,
+      "F(3)": 0.7435764080799807,
+      "F(6)": 0.8191336871843474,
+      "F(12)": 0.902490427357552,
+      "F(24)": 0.9711334769758242,
+      "F(36)": 1.0
+    },
+    "Y1 crash/fire": {
+      "F(1)": 0.705846938921778,
+      "F(3)": 0.8192021558705904,
+      "F(6)": 0.8778865587775755,
+      "F(12)": 0.9360119260926278,
+      "F(24)": 0.9812364720553876,
+      "F(36)": 1.0
+    },
+    "Y2 injury": {
+      "F(1)": 0.6701963423323569,
+      "F(3)": 0.7963344153273691,
+      "F(6)": 0.8617488718232919,
+      "F(12)": 0.9250059377721479,
+      "F(24)": 0.9773770881165387,
+      "F(36)": 1.0
+    },
+    "Y3 fatality": {
+      "F(1)": 0.4255754475703325,
+      "F(3)": 0.5687979539641944,
+      "F(6)": 0.6751918158567775,
+      "F(12)": 0.7979539641943734,
+      "F(24)": 0.9345268542199489,
+      "F(36)": 1.0
+    }
+  },
+  "ks_tests": {
+    "Y1_vs_Y0": {
+      "D": 0.09015518426895142,
+      "p": 0.0,
+      "n1": 71400,
+      "n2": 1142025
+    },
+    "Y2_vs_Y0": {
+      "D": 0.09074696898460388,
+      "p": 0.0,
+      "n1": 51920,
+      "n2": 1142025
+    },
+    "Y3_vs_Y0": {
+      "D": 0.26253944635391235,
+      "p": 0.0,
+      "n1": 2186,
+      "n2": 1142025
+    }
+  },
+  "bootstrap_median_diffs": {
+    "Y1_minus_Y0_median_days": {
+      "point": -5.0,
+      "lo95": -6.0,
+      "hi95": -5.0
+    },
+    "Y2_minus_Y0_median_days": {
+      "point": -1.0,
+      "lo95": -1.0,
+      "hi95": 0.0
+    },
+    "Y3_minus_Y0_median_days": {
+      "point": 79.0,
+      "lo95": 68.0,
+      "hi95": 95.5
+    }
+  },
+  "median_delay_by_era_days": {
+    "1995-2004": 31.0,
+    "2005-2014": 23.0,
+    "2015-2023": 13.0
+  },
+  "hazard_model": {
+    "n_cells": 4154,
+    "n_person_periods": 5637946,
+    "references": {
+      "dbin": "0",
+      "severity": "0",
+      "era": "2015-2023",
+      "channel": "IVOQ",
+      "compfam": "OTHER"
+    },
+    "pseudo_r2_dev": 0.9364818345800376,
+    "severity_hazard_ratios": {
+      "Y1": {
+        "hr": 1.2209659146590663,
+        "lo95": 1.211441950451932,
+        "hi95": 1.2305647531878179,
+        "p": 0.0
+      },
+      "Y2": {
+        "hr": 1.195021722606554,
+        "lo95": 1.1839739168437662,
+        "hi95": 1.2061726167992777,
+        "p": 2.40463143326073e-309
+      },
+      "Y3": {
+        "hr": 0.7102212521523106,
+        "lo95": 0.6789919369047733,
+        "hi95": 0.7428869174915381,
+        "p": 2.6584738674979276e-50
+      }
+    },
+    "csv": "hazard_model.csv"
+  },
+  "gate2_reconciliation": {
+    "note": "Outline's ~132 d fatality median reproduces under channels=all + no 1995 cohort floor. Main spec (consumer + floor) gives a smaller but still ~5x gradient; the floor removes left-truncated pre-1995 cohorts whose delays are biased long.",
+    "grid": [
+      {
+        "channels": "consumer",
+        "cohort_floor_1995": true,
+        "n": 1267531,
+        "median_all_days": 20.0,
+        "median_Y0_days": 20.0,
+        "median_Y3_days": 99.0,
+        "n_Y3": 2186,
+        "is_main_spec": true
+      },
+      {
+        "channels": "consumer",
+        "cohort_floor_1995": false,
+        "n": 1276816,
+        "median_all_days": 20.0,
+        "median_Y0_days": 21.0,
+        "median_Y3_days": 110.0,
+        "n_Y3": 2252,
+        "is_main_spec": false
+      },
+      {
+        "channels": "all",
+        "cohort_floor_1995": true,
+        "n": 1309935,
+        "median_all_days": 21.0,
+        "median_Y0_days": 21.0,
+        "median_Y3_days": 121.0,
+        "n_Y3": 2481,
+        "is_main_spec": false
+      },
+      {
+        "channels": "all",
+        "cohort_floor_1995": false,
+        "n": 1319554,
+        "median_all_days": 21.0,
+        "median_Y0_days": 21.0,
+        "median_Y3_days": 131.5,
+        "n_Y3": 2554,
+        "is_main_spec": false
+      }
+    ]
+  },
+  "gate2": {
+    "median_overall_days": 20.0,
+    "median_by_severity_days": {
+      "Y0": 20.0,
+      "Y1": 15.0,
+      "Y2": 19.0,
+      "Y3": 99.0
+    },
+    "ratio_Y3_over_Y0": 4.95
+  }
+}

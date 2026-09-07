@@ -1,0 +1,203 @@
+{
+  "rule": {
+    "z_threshold": 3.0,
+    "consecutive_months": 2,
+    "baseline": "same calendar month, prior 5 years",
+    "sigma_floor": "Poisson sd sqrt(mu)",
+    "nowcast_arm_variance": "sd = sqrt(sd_developed^2 + mu*(1/F_hat(0) - 1)); propagates the arrival variance of the not-yet-observed share into the alarm denominator, so the correction cannot buy sensitivity through the division alone",
+    "correction": "severity-pooled F_hat for severe (Y>=1) consumer complaints, re-estimated at each cutoff"
+  },
+  "arms": [
+    "naive",
+    "naive_matched",
+    "nowcast"
+  ],
+  "primary_cases": [
+    {
+      "name": "Hyundai/Kia engine fires",
+      "makes": [
+        "HYUNDAI",
+        "KIA"
+      ],
+      "families": [
+        "ENGINE",
+        "ENGINE AND ENGINE COOLING"
+      ],
+      "window": [
+        "2017-01",
+        "2020-12"
+      ],
+      "peak_monthly_severe_complete": 24.0,
+      "total_severe_in_window": 613.0,
+      "status": "evaluated",
+      "tau_naive": "2018-11",
+      "tau_naive_p": 24226,
+      "tau_naive_matched": "2017-08",
+      "tau_naive_matched_p": 24211,
+      "tau_nowcast": "2017-05",
+      "tau_nowcast_p": 24208,
+      "delta_vs_naive_months": 18,
+      "delta_vs_naive_matched_months": 3,
+      "max_z": {
+        "naive": 4.7389940405247435,
+        "naive_matched": 12.118046823788454,
+        "nowcast": 8.790596523586526
+      }
+    },
+    {
+      "name": "Chevrolet Bolt battery fires",
+      "makes": [
+        "CHEVROLET"
+      ],
+      "families": [
+        "ELECTRICAL SYSTEM"
+      ],
+      "window": [
+        "2019-01",
+        "2022-12"
+      ],
+      "peak_monthly_severe_complete": 9.0,
+      "total_severe_in_window": 170.0,
+      "status": "evaluated",
+      "tau_naive": null,
+      "tau_naive_p": null,
+      "tau_naive_matched": null,
+      "tau_naive_matched_p": null,
+      "tau_nowcast": null,
+      "tau_nowcast_p": null,
+      "delta_vs_naive_months": "neither alarms",
+      "delta_vs_naive_matched_months": "neither alarms",
+      "max_z": {
+        "naive": 0.6527533657682197,
+        "naive_matched": 3.0,
+        "nowcast": 2.5041245938126
+      }
+    },
+    {
+      "name": "ARC inflator (all makes, air bags)",
+      "makes": null,
+      "families": [
+        "AIR BAGS"
+      ],
+      "window": [
+        "2021-01",
+        "2024-12"
+      ],
+      "peak_monthly_severe_complete": 88.0,
+      "total_severe_in_window": 1975.0,
+      "status": "evaluated",
+      "tau_naive": null,
+      "tau_naive_p": null,
+      "tau_naive_matched": null,
+      "tau_naive_matched_p": null,
+      "tau_nowcast": null,
+      "tau_nowcast_p": null,
+      "delta_vs_naive_months": "neither alarms",
+      "delta_vs_naive_matched_months": "neither alarms",
+      "max_z": {
+        "naive": -1.120284478796719,
+        "naive_matched": -0.02329679894853195,
+        "nowcast": -0.110793273409302
+      }
+    }
+  ],
+  "stream_wide": {
+    "n_streams_screened": 371,
+    "n_streams_evaluated": 214,
+    "alarm_rate_nowcast": 0.3598130841121495,
+    "alarm_rate_naive": 0.06542056074766354,
+    "alarm_rate_naive_matched": 0.17289719626168223,
+    "nowcast_only_alarms": 63,
+    "naive_only_alarms": 0,
+    "neither_alarms": 137,
+    "delta_vs_naive": {
+      "n": 14,
+      "mean": 1.1428571428571428,
+      "median": 0.0,
+      "share_gain_ge_1": 0.35714285714285715,
+      "share_zero": 0.6428571428571429,
+      "share_negative": 0.0,
+      "p25": 0.0,
+      "p75": 1.0,
+      "max": 10.0,
+      "min": 0.0
+    },
+    "delta_vs_naive_matched": {
+      "n": 37,
+      "mean": 12.756756756756756,
+      "median": 0.0,
+      "share_gain_ge_1": 0.32432432432432434,
+      "share_zero": 0.6216216216216216,
+      "share_negative": 0.05405405405405406,
+      "p25": 0.0,
+      "p75": 2.0,
+      "max": 158.0,
+      "min": -26.0
+    },
+    "delta_vs_naive_within12": {
+      "n": 14,
+      "mean": 1.1428571428571428,
+      "median": 0.0,
+      "share_gain_ge_1": 0.35714285714285715,
+      "share_zero": 0.6428571428571429,
+      "share_negative": 0.0,
+      "p25": 0.0,
+      "p75": 1.0,
+      "max": 10.0,
+      "min": 0.0
+    },
+    "delta_vs_naive_matched_within12": {
+      "n": 29,
+      "mean": 0.7586206896551724,
+      "median": 0.0,
+      "share_gain_ge_1": 0.1724137931034483,
+      "share_zero": 0.7931034482758621,
+      "share_negative": 0.034482758620689655,
+      "p25": 0.0,
+      "p75": 0.0,
+      "max": 10.0,
+      "min": -3.0
+    },
+    "specificity_matched": {
+      "naive": {
+        "threshold": 1.399658203125,
+        "n_alarming_streams": 79,
+        "n_both": 72,
+        "median_gain_months": 0.0,
+        "mean_gain_months": -2.4444444444444446,
+        "p25": 0.0,
+        "p75": 0.0,
+        "share_gain_ge_1": 0.013888888888888888,
+        "share_zero": 0.9027777777777778,
+        "share_negative": 0.08333333333333333
+      },
+      "naive_matched": {
+        "threshold": 1.99951171875,
+        "n_alarming_streams": 85,
+        "n_both": 66,
+        "median_gain_months": 0.0,
+        "mean_gain_months": -2.9696969696969697,
+        "p25": 0.0,
+        "p75": 0.0,
+        "share_gain_ge_1": 0.10606060606060606,
+        "share_zero": 0.7424242424242424,
+        "share_negative": 0.15151515151515152
+      },
+      "n_alarming_streams_nowcast": 77
+    }
+  },
+  "gate5": {
+    "pass": true,
+    "primary_deltas_vs_naive": {
+      "Hyundai/Kia engine fires": 18,
+      "Chevrolet Bolt battery fires": "neither alarms",
+      "ARC inflator (all makes, air bags)": "neither alarms"
+    },
+    "primary_deltas_vs_naive_matched": {
+      "Hyundai/Kia engine fires": 3,
+      "Chevrolet Bolt battery fires": "neither alarms",
+      "ARC inflator (all makes, air bags)": "neither alarms"
+    },
+    "honest_negative": false
+  }
+}

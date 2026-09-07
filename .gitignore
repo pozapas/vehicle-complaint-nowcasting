@@ -1,0 +1,22 @@
+# Raw NHTSA flat files. Too large to version; see CHECKSUMS.txt and the README.
+Data/
+data/raw/
+
+# Environments and caches
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# LaTeX build products
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz
+
+# OS clutter
+.DS_Store
+Thumbs.db
+desktop.ini

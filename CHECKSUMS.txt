@@ -1,0 +1,18 @@
+SHA-256 checksums of the raw NHTSA flat files used in this study.
+
+The snapshot was downloaded on July 3, 2026 from the NHTSA public file server. NHTSA
+republishes these files continuously, so a later download will differ. Verify a download
+against these values before expecting the published numbers to reproduce exactly.
+
+Verify with:
+
+    sha256sum -c CHECKSUMS.txt
+
+84585b4ded99b0c45abc4a5dc86f85332ba0a6969d2d7d9b1247f10fc53e8f45 *CMPL.txt
+74e885e0da8314d5ac650b5f6b8cf0fee44729fd2a38cbaa6458142e6a08585c *COMPLAINTS_RECEIVED_1995-1999.txt
+baa11f9b1d624d29dbfcabca34ac3f45f2bafdc41c378c225fe3cad21fd1dbd8 *COMPLAINTS_RECEIVED_2000-2004.txt
+33490c72ebe4767f16389680d1c594b1b582a18a164d90b923aa78afd38afb21 *COMPLAINTS_RECEIVED_2005-2009.txt
+99c4a02436510efcc2bc5993a5d04d339a9720ba8c8626323d12788b42f76d32 *COMPLAINTS_RECEIVED_2010-2014.txt
+0ab05d678e7739582dc9d1d05d7c171a5756507d7e77d8875da5220a479ae903 *COMPLAINTS_RECEIVED_2015-2019.txt
+e4963a09891c65ff12773f0e8251b43cac5ac4b1bb882f8ba7734c094727665c *COMPLAINTS_RECEIVED_2020-2024.txt
+85eef0948920c0c8b72cf0338ec486f0cd6f176ac4f84d93e33b5e14e442e82c *COMPLAINTS_RECEIVED_2025-2026.txt
