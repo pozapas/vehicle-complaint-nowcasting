@@ -6,31 +6,32 @@
 \setlength{\tabcolsep}{3.6pt}
 \begin{tabular}{@{}l rrr c l r@{}}
 \toprule
-& \multicolumn{3}{c}{$\hat{F}_s(1)$} & \multicolumn{1}{c}{\footnotesize Deviation} & \multicolumn{1}{c}{\footnotesize Largest move} & \\
+& \multicolumn{3}{c}{$\hat{F}_s(1)$} & \multicolumn{1}{c}{\footnotesize Deviation from main} & \multicolumn{1}{c}{\footnotesize Largest move} & \\
 \cmidrule(lr){2-4}\cmidrule(lr){5-5}\cmidrule(lr){6-6}
 Variant & No injury & Fatality & All severe & \multicolumn{1}{c}{\tiny $-.085\ \ 0\ \ +.085$} & \multicolumn{1}{c}{max $|\Delta \hat{F}|$} & $N$ \\
 \midrule
-\textit{Main specification} & \cellcolor[HTML]{C7DCEC}0.699 & \cellcolor[HTML]{D8E7F2}0.432 & \cellcolor[HTML]{C6DBEC}0.723 & \begin{tikzpicture}[x=13mm,y=1mm,baseline=-0.75mm]\draw[glyphgrid] (0,-1.5) rectangle (1,1.5);\draw[glyphaxis] (0.5,-1.5) -- (0.5,1.5);\end{tikzpicture} & \dbar{0}{0.000} & 1\,475\,987 \\
+\textit{Main specification} & 0.699 & 0.432 & 0.723 & \begin{tikzpicture}[x=13mm,y=1mm,baseline=-0.75mm]\draw[glyphgrid] (0,-1.5) rectangle (1,1.5);\draw[glyphaxis] (0.5,-1.5) -- (0.5,1.5);\end{tikzpicture} & \textit{\tiny baseline} & 1\,475\,987 \\
 \addlinespace[2pt]
-All channels, not consumer only & \cellcolor[HTML]{C7DCEC}0.699 & \cellcolor[HTML]{D8E7F2}0.436 & \cellcolor[HTML]{C6DBEC}0.723 & \begin{tikzpicture}[x=13mm,y=1mm,baseline=-0.75mm]\draw[glyphgrid] (0,-1.5) rectangle (1,1.5);\draw[glyphaxis] (0.5,-1.5) -- (0.5,1.5);\fill[black!35] (0.501,0.9) circle (0.42mm);\fill[barink] (0.520,0) circle (0.42mm);\fill[barink!45] (0.502,-0.9) circle (0.42mm);\end{tikzpicture} & \dbar{0.043}{0.003} & 1\,523\,156 \\
-Delay cap $D = 24$ months & \cellcolor[HTML]{C6DCEC}0.712 & \cellcolor[HTML]{D7E6F1}0.453 & \cellcolor[HTML]{C5DBEC}0.734 & \begin{tikzpicture}[x=13mm,y=1mm,baseline=-0.75mm]\draw[glyphgrid] (0,-1.5) rectangle (1,1.5);\draw[glyphaxis] (0.5,-1.5) -- (0.5,1.5);\fill[black!35] (0.576,0.9) circle (0.42mm);\fill[barink] (0.623,0) circle (0.42mm);\fill[barink!45] (0.564,-0.9) circle (0.42mm);\end{tikzpicture} & \dbar{0.493}{0.039} & 1\,475\,987 \\
-Rolling window $W = 36$ months & \cellcolor[HTML]{C8DDED}0.685 & \cellcolor[HTML]{D9E7F2}0.427 & \cellcolor[HTML]{C6DBEC}0.714 & \begin{tikzpicture}[x=13mm,y=1mm,baseline=-0.75mm]\draw[glyphgrid] (0,-1.5) rectangle (1,1.5);\draw[glyphaxis] (0.5,-1.5) -- (0.5,1.5);\fill[black!35] (0.421,0.9) circle (0.42mm);\fill[barink] (0.468,0) circle (0.42mm);\fill[barink!45] (0.449,-0.9) circle (0.42mm);\end{tikzpicture} & \dbar{0.516}{0.041} & 1\,475\,987 \\
-Window extended to full history & \cellcolor[HTML]{CBDEEE}0.641 & \cellcolor[HTML]{D9E7F2}0.425 & \cellcolor[HTML]{C8DCED}0.688 & \begin{tikzpicture}[x=13mm,y=1mm,baseline=-0.75mm]\draw[glyphgrid] (0,-1.5) rectangle (1,1.5);\draw[glyphaxis] (0.5,-1.5) -- (0.5,1.5);\fill[black!35] (0.159,0.9) circle (0.42mm);\fill[barink] (0.457,0) circle (0.42mm);\fill[barink!45] (0.296,-0.9) circle (0.42mm);\end{tikzpicture} & \dbar{0.730}{0.058} & 1\,475\,987 \\
-Drop pre-2003 cohorts & \cellcolor[HTML]{C7DCEC}0.699 & \cellcolor[HTML]{D8E7F2}0.432 & \cellcolor[HTML]{C6DBEC}0.723 & \begin{tikzpicture}[x=13mm,y=1mm,baseline=-0.75mm]\draw[glyphgrid] (0,-1.5) rectangle (1,1.5);\draw[glyphaxis] (0.5,-1.5) -- (0.5,1.5);\fill[black!35] (0.500,0.9) circle (0.42mm);\fill[barink] (0.500,0) circle (0.42mm);\fill[barink!45] (0.500,-0.9) circle (0.42mm);\end{tikzpicture} & \dbar{0.000}{0.000} & 1\,264\,850 \\
-Drop recall-publicity burst months & \cellcolor[HTML]{C7DCEC}0.702 & \cellcolor[HTML]{D8E7F2}0.436 & \cellcolor[HTML]{C6DBEC}0.725 & \begin{tikzpicture}[x=13mm,y=1mm,baseline=-0.75mm]\draw[glyphgrid] (0,-1.5) rectangle (1,1.5);\draw[glyphaxis] (0.5,-1.5) -- (0.5,1.5);\fill[black!35] (0.522,0.9) circle (0.42mm);\fill[barink] (0.521,0) circle (0.42mm);\fill[barink!45] (0.512,-0.9) circle (0.42mm);\end{tikzpicture} & \dbar{0.046}{0.004} & 1\,376\,342 \\
-Delay in elapsed days & \cellcolor[HTML]{C5DBEC}0.729 & \cellcolor[HTML]{D3E4F0}0.511 & \cellcolor[HTML]{C3D9EB}0.765 & \begin{tikzpicture}[x=13mm,y=1mm,baseline=-0.75mm]\draw[glyphgrid] (0,-1.5) rectangle (1,1.5);\draw[glyphaxis] (0.5,-1.5) -- (0.5,1.5);\fill[black!35] (0.680,0.9) circle (0.42mm);\fill[barink] (0.967,0) circle (0.42mm);\fill[barink!45] (0.750,-0.9) circle (0.42mm);\end{tikzpicture} & \dbar{1.000}{0.079} & 1\,475\,987 \\
+All channels, not consumer only & 0.699 & 0.436 & 0.723 & \begin{tikzpicture}[x=13mm,y=1mm,baseline=-0.75mm]\draw[glyphgrid] (0,-1.5) rectangle (1,1.5);\draw[glyphaxis] (0.5,-1.5) -- (0.5,1.5);\fill[black!35] (0.501,0.9) circle (0.42mm);\fill[barink] (0.520,0) circle (0.42mm);\fill[barink!45] (0.502,-0.9) circle (0.42mm);\end{tikzpicture} & \dbar{0.043}{0.003} & 1\,523\,156 \\
+Delay cap $D = 24$ months & 0.712 & 0.453 & 0.734 & \begin{tikzpicture}[x=13mm,y=1mm,baseline=-0.75mm]\draw[glyphgrid] (0,-1.5) rectangle (1,1.5);\draw[glyphaxis] (0.5,-1.5) -- (0.5,1.5);\fill[black!35] (0.576,0.9) circle (0.42mm);\fill[barink] (0.623,0) circle (0.42mm);\fill[barink!45] (0.564,-0.9) circle (0.42mm);\end{tikzpicture} & \dbar{0.493}{0.039} & 1\,475\,987 \\
+Rolling window $W = 36$ months & 0.685 & 0.427 & 0.714 & \begin{tikzpicture}[x=13mm,y=1mm,baseline=-0.75mm]\draw[glyphgrid] (0,-1.5) rectangle (1,1.5);\draw[glyphaxis] (0.5,-1.5) -- (0.5,1.5);\fill[black!35] (0.421,0.9) circle (0.42mm);\fill[barink] (0.468,0) circle (0.42mm);\fill[barink!45] (0.449,-0.9) circle (0.42mm);\end{tikzpicture} & \dbar{0.516}{0.041} & 1\,475\,987 \\
+Window extended to full history & 0.641 & 0.425 & 0.688 & \begin{tikzpicture}[x=13mm,y=1mm,baseline=-0.75mm]\draw[glyphgrid] (0,-1.5) rectangle (1,1.5);\draw[glyphaxis] (0.5,-1.5) -- (0.5,1.5);\fill[black!35] (0.159,0.9) circle (0.42mm);\fill[barink] (0.457,0) circle (0.42mm);\fill[barink!45] (0.296,-0.9) circle (0.42mm);\end{tikzpicture} & \dbar{0.730}{0.058} & 1\,475\,987 \\
+Drop pre-2003 cohorts & 0.699 & 0.432 & 0.723 & \begin{tikzpicture}[x=13mm,y=1mm,baseline=-0.75mm]\draw[glyphgrid] (0,-1.5) rectangle (1,1.5);\draw[glyphaxis] (0.5,-1.5) -- (0.5,1.5);\fill[black!35] (0.500,0.9) circle (0.42mm);\fill[barink] (0.500,0) circle (0.42mm);\fill[barink!45] (0.500,-0.9) circle (0.42mm);\end{tikzpicture} & \dbar{0.000}{0.000} & 1\,264\,850 \\
+Drop recall-publicity burst months & 0.702 & 0.436 & 0.725 & \begin{tikzpicture}[x=13mm,y=1mm,baseline=-0.75mm]\draw[glyphgrid] (0,-1.5) rectangle (1,1.5);\draw[glyphaxis] (0.5,-1.5) -- (0.5,1.5);\fill[black!35] (0.522,0.9) circle (0.42mm);\fill[barink] (0.521,0) circle (0.42mm);\fill[barink!45] (0.512,-0.9) circle (0.42mm);\end{tikzpicture} & \dbar{0.046}{0.004} & 1\,376\,342 \\
+Delay in elapsed days & 0.729 & 0.511 & 0.765 & \begin{tikzpicture}[x=13mm,y=1mm,baseline=-0.75mm]\draw[glyphgrid] (0,-1.5) rectangle (1,1.5);\draw[glyphaxis] (0.5,-1.5) -- (0.5,1.5);\fill[black!35] (0.680,0.9) circle (0.42mm);\fill[barink] (0.967,0) circle (0.42mm);\fill[barink!45] (0.750,-0.9) circle (0.42mm);\end{tikzpicture} & \dbar{1.000}{0.079} & 1\,475\,987 \\
 \bottomrule
 \end{tabular}
 
 \vspace{3pt}
 \parbox{\linewidth}{\footnotesize
 Note: $\hat{F}_s(1)$ is the share of a cohort arrived one month after the incident
-month, shaded as in Table \ref{tab:factors}. The deviation glyph places the three factors
-against the main specification on a common scale of $\pm 0.085$, with no injury on the top
-row, fatality on the middle row, and all severe on the bottom row, so a mark right of
-centre is a variant that reports the cohort as more complete. Max $|\Delta \hat{F}|$ is the
-largest absolute movement against the main specification across the severity classes and
-horizons of Table \ref{tab:factors}, drawn as a bar on a common scale. $N$ is the number of
-complaints entering the variant. Dropping pre-2003 cohorts leaves the factors unchanged
-because the rolling window never reaches them.}
+month. The deviation glyph places the three factors against the main specification on a
+common scale of $\pm 0.085$, with no injury on the top row, fatality on the middle row and
+all severe on the bottom row, so a mark right of centre is a variant that reports the
+cohort as more complete and a mark on the centre line is a variant that changes nothing.
+Max $|\Delta \hat{F}|$ is the largest absolute movement against the main specification
+across the severity classes and horizons of Table \ref{tab:factors}, drawn as a bar on a
+common scale so the three specification choices that matter separate from the four that do
+not. $N$ is the number of complaints entering the variant. Dropping pre-2003 cohorts
+leaves the factors unchanged because the rolling window never reaches them.}
 \end{table}
