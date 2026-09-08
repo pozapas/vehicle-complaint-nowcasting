@@ -265,7 +265,7 @@ def main():
 
     # ---------------------------------------------------- Gate 2 reconciliation grid
     # The outline quotes "fatality median ~132 days vs ~20 overall" (verified 2026-07-23).
-    # That figure comes from an ALL-CHANNELS set with NO 1995 cohort floor. Our main
+    # That value comes from an ALL-CHANNELS set with NO 1995 cohort floor. Our main
     # spec is consumer-only with the floor (pre-1995 cohorts are left-truncated: their
     # complaints received before 1995-01 are absent from the snapshot, which biases
     # their observed delays LONG). Both variants are computed here so the difference is

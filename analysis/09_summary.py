@@ -116,7 +116,7 @@ def main():
     W("")
     rec = delay["gate2_reconciliation"]
     W(f"> **Note for the writer.** The outline quotes ~132 days for the fatality "
-      f"median. That figure reproduces under an all-channels specification with no "
+      f"median. That median reproduces under an all-channels specification with no "
       f"1995 cohort floor (see the grid in `delay_stats.json > "
       f"gate2_reconciliation`); the main specification gives "
       f"{g2['median_by_severity_days']['Y3']:.0f} days. Quote the main-spec number. "
