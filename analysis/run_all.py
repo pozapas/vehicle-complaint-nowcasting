@@ -27,6 +27,7 @@ STEPS = [
     ("07_tables.py", "Step 7  -  LaTeX tables and compile proof"),
     ("08_robustness.py", "Step 8  -  robustness battery"),
     ("09_summary.py", "Step 9  -  RESULTS_SUMMARY.md"),
+    ("11_tables34.py", "Step 11 - tables 3 and 4 from the robustness battery"),
     ("10_qa_audit.py", "Self-QA  -  formula-vs-code and style audit"),
 ]
 
